@@ -1,0 +1,14 @@
+.lake/
+build/
+lake-packages/
+*.olean
+*.ilean
+*.trace
+*.part
+*.tmp
+*.log
+__pycache__/
+.DS_Store
+.idea/
+.vscode/
+references/inbox/

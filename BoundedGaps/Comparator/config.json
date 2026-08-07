@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Comparator.Challenge",
+  "solution_module": "Comparator.Solution",
+  "theorem_names": [
+    "BoundedGaps.Comparator.boundedGapsStatement_iff_consecutive",
+    "BoundedGaps.Comparator.paperLiminfStatement_iff_consecutive",
+    "BoundedGaps.Comparator.paperLiminfStatement_iff_boundedGapsStatement",
+    "BoundedGaps.Comparator.unconditional_boundedGapsStatement"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": false
+}
