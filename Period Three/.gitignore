@@ -1,0 +1,9 @@
+.lake/
+.tmp/*
+!.tmp/.keep
+Challenges/Exports/*
+*.olean
+*.ilean
+*.c
+*.o
+

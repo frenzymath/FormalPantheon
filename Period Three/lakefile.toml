@@ -1,0 +1,20 @@
+name = "period_three_mathlib"
+version = "0.1.0"
+defaultTargets = ["PeriodThree"]
+
+[leanOptions]
+autoImplicit = false
+weak.linter.mathlibStandardSet = true
+weak.linter.style.header = false
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "81a5d257c8e410db227a6665ed08f64fea08e997"
+
+[[lean_lib]]
+name = "PeriodThree"
+
+[[lean_lib]]
+name = "Comparator"
+globs = ["Comparator.+"]
