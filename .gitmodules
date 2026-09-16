@@ -1,0 +1,3 @@
+[submodule "LaverTable"]
+	path = LaverTable
+	url = https://github.com/frenzymath/LaverTable.git
