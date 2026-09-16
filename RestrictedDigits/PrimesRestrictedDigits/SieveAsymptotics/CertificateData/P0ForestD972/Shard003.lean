@@ -1,0 +1,226 @@
+import PrimesRestrictedDigits.SieveAsymptotics.SectionSixP0LeafValidatorD970
+import PrimesRestrictedDigits.SieveAsymptotics.SectionSixP0ThreeRootCoverD971
+
+/-!
+# exact P0 forest shard 3
+-/
+
+set_option autoImplicit false
+set_option warningAsError true
+set_option maxRecDepth 1000000
+set_option maxHeartbeats 0
+
+namespace PrimesRestrictedDigits
+namespace SectionSixP0CertificateD972
+namespace Shard003
+
+/- Root 0, exact path ((1, 'left'), (1, 'left'), (1, 'right'), (0, 'left'), (3, 'right')), 61 retained leaves. -/
+def root : RationalTetrahedron where
+  vertex := ![
+    ![1947513 / 8000000, 1452471 / 8000000, 24099 / 320000],
+    ![212499 / 1000000, 212499 / 1000000, 16249 / 250000],
+    ![3977533 / 16000000, 564487 / 3200000, 1122443 / 16000000],
+    ![147503 / 500000, 172497 / 1000000, 16249 / 250000]
+  ]
+
+theorem root_eq_path :
+    root = (((((sectionSixP0RootD971 (0 : Fin 3)).leftChild (1 : Fin 6)).leftChild (1 : Fin 6)).rightChild (1 : Fin 6)).leftChild (0 : Fin 6)).rightChild (3 : Fin 6) := by
+  exact congrArg RationalTetrahedron.mk (by
+    decide +kernel :
+    root.vertex = ((((((sectionSixP0RootD971 (0 : Fin 3)).leftChild (1 : Fin 6)).leftChild (1 : Fin 6)).rightChild (1 : Fin 6)).leftChild (0 : Fin 6)).rightChild (3 : Fin 6)).vertex)
+
+def tree : RationalTetraSubdivision Rat :=
+  (.split (0 : Fin 6)
+    (.split (4 : Fin 6)
+      (.split (2 : Fin 6)
+        (.split (5 : Fin 6)
+          (.split (4 : Fin 6)
+            (.retain (51513547 / 1000000))
+            (.retain (51946828 / 1000000))
+          )
+          (.split (3 : Fin 6)
+            (.split (5 : Fin 6)
+              (.retain (115985592 / 1000000))
+              (.retain (141878677 / 1000000))
+            )
+            (.split (4 : Fin 6)
+              (.retain (90665618 / 1000000))
+              (.retain (65418341 / 1000000))
+            )
+          )
+        )
+        (.split (0 : Fin 6)
+          (.split (3 : Fin 6)
+            (.split (1 : Fin 6)
+              (.retain (142059769 / 1000000))
+              (.retain (116445447 / 1000000))
+            )
+            (.retain (78309045 / 1000000))
+          )
+          (.split (2 : Fin 6)
+            (.split (3 : Fin 6)
+              (.retain (153243389 / 1000000))
+              (.retain (127886096 / 1000000))
+            )
+            (.split (1 : Fin 6)
+              (.retain (166457092 / 1000000))
+              (.retain (165417438 / 1000000))
+            )
+          )
+        )
+      )
+      (.split (3 : Fin 6)
+        (.split (2 : Fin 6)
+          (.split (3 : Fin 6)
+            (.split (5 : Fin 6)
+              (.retain (92492665 / 1000000))
+              (.retain (143852607 / 1000000))
+            )
+            (.retain (93285518 / 1000000))
+          )
+          (.split (1 : Fin 6)
+            (.split (3 : Fin 6)
+              (.retain (168536397 / 1000000))
+              (.retain (144442170 / 1000000))
+            )
+            (.split (3 : Fin 6)
+              (.retain (167257378 / 1000000))
+              (.retain (143871052 / 1000000))
+            )
+          )
+        )
+        (.split (0 : Fin 6)
+          (.split (4 : Fin 6)
+            (.split (2 : Fin 6)
+              (.retain (40879551 / 1000000))
+              (.retain (68147384 / 1000000))
+            )
+            (.split (3 : Fin 6)
+              (.retain (68864726 / 1000000))
+              (.retain (41939837 / 1000000))
+            )
+          )
+          (.split (2 : Fin 6)
+            (.split (4 : Fin 6)
+              (.retain (66945443 / 1000000))
+              (.retain (93838887 / 1000000))
+            )
+            (.split (4 : Fin 6)
+              (.retain (130997564 / 1000000))
+              (.retain (132254133 / 1000000))
+            )
+          )
+        )
+      )
+    )
+    (.split (2 : Fin 6)
+      (.split (4 : Fin 6)
+        (.split (5 : Fin 6)
+          (.split (2 : Fin 6)
+            (.split (4 : Fin 6)
+              (.retain (63625705 / 1000000))
+              (.retain (88604140 / 1000000))
+            )
+            (.retain (124182709 / 1000000))
+          )
+          (.split (1 : Fin 6)
+            (.split (5 : Fin 6)
+              (.retain (139484960 / 1000000))
+              (.retain (165075987 / 1000000))
+            )
+            (.split (2 : Fin 6)
+              (.retain (138048881 / 1000000))
+              (.retain (159927796 / 1000000))
+            )
+          )
+        )
+        (.split (0 : Fin 6)
+          (.split (4 : Fin 6)
+            (.split (3 : Fin 6)
+              (.retain (170272601 / 1000000))
+              (.retain (156564086 / 1000000))
+            )
+            (.split (3 : Fin 6)
+              (.retain (188995971 / 1000000))
+              (.retain (187834005 / 1000000))
+            )
+          )
+          (.split (1 : Fin 6)
+            (.split (5 : Fin 6)
+              (.retain (162214345 / 1000000))
+              (.retain (188312301 / 1000000))
+            )
+            (.split (0 : Fin 6)
+              (.retain (172075452 / 1000000))
+              (.retain (171003328 / 1000000))
+            )
+          )
+        )
+      )
+      (.split (4 : Fin 6)
+        (.split (1 : Fin 6)
+          (.split (5 : Fin 6)
+            (.split (2 : Fin 6)
+              (.retain (205421687 / 1000000))
+              (.retain (229927332 / 1000000))
+            )
+            (.split (1 : Fin 6)
+              (.retain (212034659 / 1000000))
+              (.retain (232415529 / 1000000))
+            )
+          )
+          (.split (2 : Fin 6)
+            (.split (5 : Fin 6)
+              (.retain (225142559 / 1000000))
+              (.retain (249316138 / 1000000))
+            )
+            (.split (0 : Fin 6)
+              (.retain (259592240 / 1000000))
+              (.split (1 : Fin 6)
+                (.retain (291075482 / 1000000))
+                (.retain (308561289 / 1000000))
+              )
+            )
+          )
+        )
+        (.split (0 : Fin 6)
+          (.split (3 : Fin 6)
+            (.split (1 : Fin 6)
+              (.retain (213098817 / 1000000))
+              (.retain (232798444 / 1000000))
+            )
+            (.split (4 : Fin 6)
+              (.retain (220714948 / 1000000))
+              (.retain (222597555 / 1000000))
+            )
+          )
+          (.split (1 : Fin 6)
+            (.split (3 : Fin 6)
+              (.retain (234434837 / 1000000))
+              (.retain (253387198 / 1000000))
+            )
+            (.split (2 : Fin 6)
+              (.retain (261521697 / 1000000))
+              (.split (0 : Fin 6)
+                (.retain (292703735 / 1000000))
+                (.retain (311330981 / 1000000))
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+
+theorem valid :
+    tree.coverValid sectionSixP0LeafValidD970 root = true := by
+  decide +kernel
+
+theorem replay :
+    tree.replayWeightRat root (fun _ q => q) =
+      (1110466283383469761191373 / 4915200000000000000000000000 : Rat) := by
+  decide +kernel
+
+end Shard003
+end SectionSixP0CertificateD972
+end PrimesRestrictedDigits

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "lean_toolchain": "leanprover/lean4:v4.32.0",
+  "comparator": {
+    "revision": "1b82ba006811f7e25d53858252372e4d85fd3921",
+    "url": "https://codeload.github.com/leanprover/comparator/tar.gz/1b82ba006811f7e25d53858252372e4d85fd3921",
+    "sha256": "fa7dc5b2b909e778cd67559fc392633632cba2bfbb734a2d6733db122dba77e2",
+    "manifest_sha256": "7375e1fcd4c7d15fae836ac190ea50ba29dd070a56007a5e6e07cbdf23729153",
+    "lean4export_revision": "3de59f10bc4b4a0f2de698597aeb1246caa0df0a",
+    "lean4checker_revision": "b7398199245524275543dec6113229c9bb4902e5"
+  },
+  "landrun": {
+    "revision": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+    "url": "https://codeload.github.com/Zouuup/landrun/tar.gz/811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+    "sha256": "5c5f16a55e3ee87eb89bb909410d877501914a8d7ff9b96674e3c12af83ada71",
+    "go_sum_sha256": "a6a5ec06c4b78ca140c76fdbe171b82a5521a808abc5805ea6eba568e29763e5"
+  },
+  "go": {
+    "version": "go1.26.8",
+    "url": "https://go.dev/dl/go1.26.8.linux-amd64.tar.gz",
+    "sha256": "d0f743b33e8d8945e6b1f432edd15785c70507121d6e2a723b21285eddf8b57b"
+  }
+}

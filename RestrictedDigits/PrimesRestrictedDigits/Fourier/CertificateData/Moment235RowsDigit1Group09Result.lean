@@ -1,0 +1,54 @@
+import PrimesRestrictedDigits.Fourier.CertificateData.Moment235RowsDigit1Group09
+import PrimesRestrictedDigits.Fourier.Moment235CertificateRowAggregation
+
+/-! Bounds for one 200-row certificate group. -/
+
+set_option maxRecDepth 1000000
+set_option maxHeartbeats 0
+
+namespace PrimesRestrictedDigits
+
+theorem moment235RowsDigit1Group09 :
+    forall offset : Fin 200,
+      moment235IndexedRow (1 : Fin 5)
+        ⟨1800 + offset.val, by omega⟩ := by
+  have h1800_1820 := moment235IndexedRows_append (1 : Fin 5) 1800 10 10
+    (by omega) moment235RowsDigit1Group09Block00 moment235RowsDigit1Group09Block01
+  have h1820_1840 := moment235IndexedRows_append (1 : Fin 5) 1820 10 10
+    (by omega) moment235RowsDigit1Group09Block02 moment235RowsDigit1Group09Block03
+  have h1840_1860 := moment235IndexedRows_append (1 : Fin 5) 1840 10 10
+    (by omega) moment235RowsDigit1Group09Block04 moment235RowsDigit1Group09Block05
+  have h1860_1880 := moment235IndexedRows_append (1 : Fin 5) 1860 10 10
+    (by omega) moment235RowsDigit1Group09Block06 moment235RowsDigit1Group09Block07
+  have h1880_1900 := moment235IndexedRows_append (1 : Fin 5) 1880 10 10
+    (by omega) moment235RowsDigit1Group09Block08 moment235RowsDigit1Group09Block09
+  have h1900_1920 := moment235IndexedRows_append (1 : Fin 5) 1900 10 10
+    (by omega) moment235RowsDigit1Group09Block10 moment235RowsDigit1Group09Block11
+  have h1920_1940 := moment235IndexedRows_append (1 : Fin 5) 1920 10 10
+    (by omega) moment235RowsDigit1Group09Block12 moment235RowsDigit1Group09Block13
+  have h1940_1960 := moment235IndexedRows_append (1 : Fin 5) 1940 10 10
+    (by omega) moment235RowsDigit1Group09Block14 moment235RowsDigit1Group09Block15
+  have h1960_1980 := moment235IndexedRows_append (1 : Fin 5) 1960 10 10
+    (by omega) moment235RowsDigit1Group09Block16 moment235RowsDigit1Group09Block17
+  have h1980_2000 := moment235IndexedRows_append (1 : Fin 5) 1980 10 10
+    (by omega) moment235RowsDigit1Group09Block18 moment235RowsDigit1Group09Block19
+  have h1800_1840 := moment235IndexedRows_append (1 : Fin 5) 1800 20 20
+    (by omega) h1800_1820 h1820_1840
+  have h1840_1880 := moment235IndexedRows_append (1 : Fin 5) 1840 20 20
+    (by omega) h1840_1860 h1860_1880
+  have h1880_1920 := moment235IndexedRows_append (1 : Fin 5) 1880 20 20
+    (by omega) h1880_1900 h1900_1920
+  have h1920_1960 := moment235IndexedRows_append (1 : Fin 5) 1920 20 20
+    (by omega) h1920_1940 h1940_1960
+  have h1960_2000 := moment235IndexedRows_append (1 : Fin 5) 1960 20 20
+    (by omega) h1960_1980 h1980_2000
+  have h1800_1880 := moment235IndexedRows_append (1 : Fin 5) 1800 40 40
+    (by omega) h1800_1840 h1840_1880
+  have h1880_1960 := moment235IndexedRows_append (1 : Fin 5) 1880 40 40
+    (by omega) h1880_1920 h1920_1960
+  have h1800_1960 := moment235IndexedRows_append (1 : Fin 5) 1800 80 80
+    (by omega) h1800_1880 h1880_1960
+  exact moment235IndexedRows_append (1 : Fin 5) 1800 160 40
+    (by omega) h1800_1960 h1960_2000
+
+end PrimesRestrictedDigits

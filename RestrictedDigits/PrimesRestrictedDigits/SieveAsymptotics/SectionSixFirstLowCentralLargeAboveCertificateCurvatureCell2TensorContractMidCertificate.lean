@@ -1,0 +1,109 @@
+import PrimesRestrictedDigits.SieveAsymptotics.SectionSixFirstLowCentralLargeAboveCertificateCurvatureCell2TensorContractData
+/-! # SectionSixFirstLowCentralLargeAboveCertificateCurvatureCell2TensorContractMidCertificate -/
+open Set
+open scoped BigOperators Polynomial
+namespace PrimesRestrictedDigits
+noncomputable section
+namespace SectionSixFirstLowCentralLargeAboveCertificateCurvatureCell2
+open Polynomial (C X)
+local macro "cell2_contract_value" n:ident i:num k:num : command =>
+  `(@[simp] theorem $n : cell2TensorContract $i $k = cell2TensorContractTable $i $k := by
+    rw [cell2TensorContract]
+    repeat rw [Finset.sum_range_succ]
+    simp_rw [cell2_bernstein_coeff_formula]
+    norm_num [Nat.choose, cell2_bernstein_coeff_formula, Finset.sum_range_succ,
+      cell2BernsteinCoefficient, cell2BernsteinScale, cell2BernsteinNumerator,
+      cell2TensorContractTable, cell2TensorContractNumerator] <;> ring_nf)
+cell2_contract_value cell2TensorContract_value_0_9 0 9
+cell2_contract_value cell2TensorContract_value_1_9 1 9
+cell2_contract_value cell2TensorContract_value_2_9 2 9
+cell2_contract_value cell2TensorContract_value_3_9 3 9
+cell2_contract_value cell2TensorContract_value_4_9 4 9
+cell2_contract_value cell2TensorContract_value_5_9 5 9
+cell2_contract_value cell2TensorContract_value_6_9 6 9
+cell2_contract_value cell2TensorContract_value_7_9 7 9
+cell2_contract_value cell2TensorContract_value_8_9 8 9
+cell2_contract_value cell2TensorContract_value_9_9 9 9
+cell2_contract_value cell2TensorContract_value_0_10 0 10
+cell2_contract_value cell2TensorContract_value_1_10 1 10
+cell2_contract_value cell2TensorContract_value_2_10 2 10
+cell2_contract_value cell2TensorContract_value_3_10 3 10
+cell2_contract_value cell2TensorContract_value_4_10 4 10
+cell2_contract_value cell2TensorContract_value_5_10 5 10
+cell2_contract_value cell2TensorContract_value_6_10 6 10
+cell2_contract_value cell2TensorContract_value_7_10 7 10
+cell2_contract_value cell2TensorContract_value_8_10 8 10
+cell2_contract_value cell2TensorContract_value_9_10 9 10
+cell2_contract_value cell2TensorContract_value_0_11 0 11
+cell2_contract_value cell2TensorContract_value_1_11 1 11
+cell2_contract_value cell2TensorContract_value_2_11 2 11
+cell2_contract_value cell2TensorContract_value_3_11 3 11
+cell2_contract_value cell2TensorContract_value_4_11 4 11
+cell2_contract_value cell2TensorContract_value_5_11 5 11
+cell2_contract_value cell2TensorContract_value_6_11 6 11
+cell2_contract_value cell2TensorContract_value_7_11 7 11
+cell2_contract_value cell2TensorContract_value_8_11 8 11
+cell2_contract_value cell2TensorContract_value_9_11 9 11
+cell2_contract_value cell2TensorContract_value_0_12 0 12
+cell2_contract_value cell2TensorContract_value_1_12 1 12
+cell2_contract_value cell2TensorContract_value_2_12 2 12
+cell2_contract_value cell2TensorContract_value_3_12 3 12
+cell2_contract_value cell2TensorContract_value_4_12 4 12
+cell2_contract_value cell2TensorContract_value_5_12 5 12
+cell2_contract_value cell2TensorContract_value_6_12 6 12
+cell2_contract_value cell2TensorContract_value_7_12 7 12
+cell2_contract_value cell2TensorContract_value_8_12 8 12
+cell2_contract_value cell2TensorContract_value_9_12 9 12
+cell2_contract_value cell2TensorContract_value_0_13 0 13
+cell2_contract_value cell2TensorContract_value_1_13 1 13
+cell2_contract_value cell2TensorContract_value_2_13 2 13
+cell2_contract_value cell2TensorContract_value_3_13 3 13
+cell2_contract_value cell2TensorContract_value_4_13 4 13
+cell2_contract_value cell2TensorContract_value_5_13 5 13
+cell2_contract_value cell2TensorContract_value_6_13 6 13
+cell2_contract_value cell2TensorContract_value_7_13 7 13
+cell2_contract_value cell2TensorContract_value_8_13 8 13
+cell2_contract_value cell2TensorContract_value_9_13 9 13
+cell2_contract_value cell2TensorContract_value_0_14 0 14
+cell2_contract_value cell2TensorContract_value_1_14 1 14
+cell2_contract_value cell2TensorContract_value_2_14 2 14
+cell2_contract_value cell2TensorContract_value_3_14 3 14
+cell2_contract_value cell2TensorContract_value_4_14 4 14
+cell2_contract_value cell2TensorContract_value_5_14 5 14
+cell2_contract_value cell2TensorContract_value_6_14 6 14
+cell2_contract_value cell2TensorContract_value_7_14 7 14
+cell2_contract_value cell2TensorContract_value_8_14 8 14
+cell2_contract_value cell2TensorContract_value_9_14 9 14
+cell2_contract_value cell2TensorContract_value_0_15 0 15
+cell2_contract_value cell2TensorContract_value_1_15 1 15
+cell2_contract_value cell2TensorContract_value_2_15 2 15
+cell2_contract_value cell2TensorContract_value_3_15 3 15
+cell2_contract_value cell2TensorContract_value_4_15 4 15
+cell2_contract_value cell2TensorContract_value_5_15 5 15
+cell2_contract_value cell2TensorContract_value_6_15 6 15
+cell2_contract_value cell2TensorContract_value_7_15 7 15
+cell2_contract_value cell2TensorContract_value_8_15 8 15
+cell2_contract_value cell2TensorContract_value_9_15 9 15
+cell2_contract_value cell2TensorContract_value_0_16 0 16
+cell2_contract_value cell2TensorContract_value_1_16 1 16
+cell2_contract_value cell2TensorContract_value_2_16 2 16
+cell2_contract_value cell2TensorContract_value_3_16 3 16
+cell2_contract_value cell2TensorContract_value_4_16 4 16
+cell2_contract_value cell2TensorContract_value_5_16 5 16
+cell2_contract_value cell2TensorContract_value_6_16 6 16
+cell2_contract_value cell2TensorContract_value_7_16 7 16
+cell2_contract_value cell2TensorContract_value_8_16 8 16
+cell2_contract_value cell2TensorContract_value_9_16 9 16
+cell2_contract_value cell2TensorContract_value_0_17 0 17
+cell2_contract_value cell2TensorContract_value_1_17 1 17
+cell2_contract_value cell2TensorContract_value_2_17 2 17
+cell2_contract_value cell2TensorContract_value_3_17 3 17
+cell2_contract_value cell2TensorContract_value_4_17 4 17
+cell2_contract_value cell2TensorContract_value_5_17 5 17
+cell2_contract_value cell2TensorContract_value_6_17 6 17
+cell2_contract_value cell2TensorContract_value_7_17 7 17
+cell2_contract_value cell2TensorContract_value_8_17 8 17
+cell2_contract_value cell2TensorContract_value_9_17 9 17
+end SectionSixFirstLowCentralLargeAboveCertificateCurvatureCell2
+end
+end PrimesRestrictedDigits

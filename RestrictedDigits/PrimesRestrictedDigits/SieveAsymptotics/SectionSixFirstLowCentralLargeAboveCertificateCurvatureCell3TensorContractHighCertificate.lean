@@ -1,0 +1,108 @@
+import PrimesRestrictedDigits.SieveAsymptotics.SectionSixFirstLowCentralLargeAboveCertificateCurvatureCell3TensorContractData
+
+/-! Exact cached tensor contractions for outer coordinates 17 through 24. -/
+
+open Set
+open scoped BigOperators Polynomial
+
+namespace PrimesRestrictedDigits
+noncomputable section
+namespace SectionSixFirstLowCentralLargeAboveCertificateCurvatureCell3
+
+open Polynomial (C X)
+
+local macro "cell3_contract_value" n:ident i:num k:num : command =>
+  `(@[simp] theorem $n :
+      cell3TensorContract $i $k = cell3TensorContractTable $i $k := by
+    rw [cell3TensorContract]
+    repeat rw [Finset.sum_range_succ]
+    simp_rw [cell3_bernstein_coeff_formula]
+    norm_num [Nat.choose, cell3_bernstein_coeff_formula,
+      Finset.sum_range_succ, cell3BernsteinCoefficient,
+      cell3BernsteinScale, cell3BernsteinNumerator,
+      cell3TensorContractTable, cell3TensorContractNumerator] <;> ring_nf)
+
+cell3_contract_value cell3TensorContract_value_0_17 0 17
+cell3_contract_value cell3TensorContract_value_1_17 1 17
+cell3_contract_value cell3TensorContract_value_2_17 2 17
+cell3_contract_value cell3TensorContract_value_3_17 3 17
+cell3_contract_value cell3TensorContract_value_4_17 4 17
+cell3_contract_value cell3TensorContract_value_5_17 5 17
+cell3_contract_value cell3TensorContract_value_6_17 6 17
+cell3_contract_value cell3TensorContract_value_7_17 7 17
+cell3_contract_value cell3TensorContract_value_8_17 8 17
+cell3_contract_value cell3TensorContract_value_9_17 9 17
+cell3_contract_value cell3TensorContract_value_0_18 0 18
+cell3_contract_value cell3TensorContract_value_1_18 1 18
+cell3_contract_value cell3TensorContract_value_2_18 2 18
+cell3_contract_value cell3TensorContract_value_3_18 3 18
+cell3_contract_value cell3TensorContract_value_4_18 4 18
+cell3_contract_value cell3TensorContract_value_5_18 5 18
+cell3_contract_value cell3TensorContract_value_6_18 6 18
+cell3_contract_value cell3TensorContract_value_7_18 7 18
+cell3_contract_value cell3TensorContract_value_8_18 8 18
+cell3_contract_value cell3TensorContract_value_9_18 9 18
+cell3_contract_value cell3TensorContract_value_0_19 0 19
+cell3_contract_value cell3TensorContract_value_1_19 1 19
+cell3_contract_value cell3TensorContract_value_2_19 2 19
+cell3_contract_value cell3TensorContract_value_3_19 3 19
+cell3_contract_value cell3TensorContract_value_4_19 4 19
+cell3_contract_value cell3TensorContract_value_5_19 5 19
+cell3_contract_value cell3TensorContract_value_6_19 6 19
+cell3_contract_value cell3TensorContract_value_7_19 7 19
+cell3_contract_value cell3TensorContract_value_8_19 8 19
+cell3_contract_value cell3TensorContract_value_9_19 9 19
+cell3_contract_value cell3TensorContract_value_0_20 0 20
+cell3_contract_value cell3TensorContract_value_1_20 1 20
+cell3_contract_value cell3TensorContract_value_2_20 2 20
+cell3_contract_value cell3TensorContract_value_3_20 3 20
+cell3_contract_value cell3TensorContract_value_4_20 4 20
+cell3_contract_value cell3TensorContract_value_5_20 5 20
+cell3_contract_value cell3TensorContract_value_6_20 6 20
+cell3_contract_value cell3TensorContract_value_7_20 7 20
+cell3_contract_value cell3TensorContract_value_8_20 8 20
+cell3_contract_value cell3TensorContract_value_9_20 9 20
+cell3_contract_value cell3TensorContract_value_0_21 0 21
+cell3_contract_value cell3TensorContract_value_1_21 1 21
+cell3_contract_value cell3TensorContract_value_2_21 2 21
+cell3_contract_value cell3TensorContract_value_3_21 3 21
+cell3_contract_value cell3TensorContract_value_4_21 4 21
+cell3_contract_value cell3TensorContract_value_5_21 5 21
+cell3_contract_value cell3TensorContract_value_6_21 6 21
+cell3_contract_value cell3TensorContract_value_7_21 7 21
+cell3_contract_value cell3TensorContract_value_8_21 8 21
+cell3_contract_value cell3TensorContract_value_9_21 9 21
+cell3_contract_value cell3TensorContract_value_0_22 0 22
+cell3_contract_value cell3TensorContract_value_1_22 1 22
+cell3_contract_value cell3TensorContract_value_2_22 2 22
+cell3_contract_value cell3TensorContract_value_3_22 3 22
+cell3_contract_value cell3TensorContract_value_4_22 4 22
+cell3_contract_value cell3TensorContract_value_5_22 5 22
+cell3_contract_value cell3TensorContract_value_6_22 6 22
+cell3_contract_value cell3TensorContract_value_7_22 7 22
+cell3_contract_value cell3TensorContract_value_8_22 8 22
+cell3_contract_value cell3TensorContract_value_9_22 9 22
+cell3_contract_value cell3TensorContract_value_0_23 0 23
+cell3_contract_value cell3TensorContract_value_1_23 1 23
+cell3_contract_value cell3TensorContract_value_2_23 2 23
+cell3_contract_value cell3TensorContract_value_3_23 3 23
+cell3_contract_value cell3TensorContract_value_4_23 4 23
+cell3_contract_value cell3TensorContract_value_5_23 5 23
+cell3_contract_value cell3TensorContract_value_6_23 6 23
+cell3_contract_value cell3TensorContract_value_7_23 7 23
+cell3_contract_value cell3TensorContract_value_8_23 8 23
+cell3_contract_value cell3TensorContract_value_9_23 9 23
+cell3_contract_value cell3TensorContract_value_0_24 0 24
+cell3_contract_value cell3TensorContract_value_1_24 1 24
+cell3_contract_value cell3TensorContract_value_2_24 2 24
+cell3_contract_value cell3TensorContract_value_3_24 3 24
+cell3_contract_value cell3TensorContract_value_4_24 4 24
+cell3_contract_value cell3TensorContract_value_5_24 5 24
+cell3_contract_value cell3TensorContract_value_6_24 6 24
+cell3_contract_value cell3TensorContract_value_7_24 7 24
+cell3_contract_value cell3TensorContract_value_8_24 8 24
+cell3_contract_value cell3TensorContract_value_9_24 9 24
+
+end SectionSixFirstLowCentralLargeAboveCertificateCurvatureCell3
+end
+end PrimesRestrictedDigits

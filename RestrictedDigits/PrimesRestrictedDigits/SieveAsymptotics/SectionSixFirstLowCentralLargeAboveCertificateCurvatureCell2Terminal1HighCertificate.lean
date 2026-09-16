@@ -1,0 +1,110 @@
+import PrimesRestrictedDigits.SieveAsymptotics.SectionSixFirstLowCentralLargeAboveCertificateCurvatureCell2StageQQCertificate
+/-! # SectionSixFirstLowCentralLargeAboveCertificateCurvatureCell2Terminal1HighCertificate -/
+open Set
+open scoped BigOperators Polynomial
+namespace PrimesRestrictedDigits
+noncomputable section
+namespace SectionSixFirstLowCentralLargeAboveCertificateCurvatureCell2
+open Polynomial (C X)
+attribute [local simp] cell2PCoeff_coeff cell2QCoeff_coeff cell2PDerivCoeff_coeff cell2QDerivCoeff_coeff cell2PDeriv2Coeff_coeff cell2QDeriv2Coeff_coeff cell2TwoPdCoeff_coeff cell2TwoPCoeff_coeff
+local macro "cell2_terminal_coeff" n:ident k:num l:num : command =>
+  `(@[simp] theorem $n : (cell2TerminalProductRow 6 $k).coeff $l = (cell2TerminalRow 6 $k).coeff $l := by
+    rw [cell2TerminalRow_coeff]
+    norm_num
+    rw [cell2TerminalProductRow, cell2OuterConv_coeff, cell2ScalarConv]
+    simp_rw [Finset.Nat.sum_antidiagonal_eq_sum_range_succ_mk]
+    repeat rw [Finset.sum_range_succ]
+    norm_num [cell2PDeriv2Coeff_coeff, cell2QDeriv2Coeff_coeff, cell2TwoPCoeff_coeff, cell2PDerivCoeff_coeff, cell2QDerivCoeff_coeff, cell2TwoPdCoeff_coeff, cell2PCoeff_coeff, cell2QCoeff_coeff, cell2PDeriv2Value, cell2QDeriv2Value, cell2PDerivValue, cell2QDerivValue, cell2PValue, cell2QValue, cell2StageRow_coeff, cell2StageProductValue, cell2StageValue, cell2PScale, cell2QScale, cell2PNumerator, cell2QNumerator] <;> ring_nf)
+cell2_terminal_coeff cell2Term1_coeff_18_0 18 0
+cell2_terminal_coeff cell2Term1_coeff_18_1 18 1
+cell2_terminal_coeff cell2Term1_coeff_18_2 18 2
+cell2_terminal_coeff cell2Term1_coeff_18_3 18 3
+cell2_terminal_coeff cell2Term1_coeff_18_4 18 4
+cell2_terminal_coeff cell2Term1_coeff_18_5 18 5
+cell2_terminal_coeff cell2Term1_coeff_18_6 18 6
+cell2_terminal_coeff cell2Term1_coeff_18_7 18 7
+cell2_terminal_coeff cell2Term1_coeff_18_8 18 8
+cell2_terminal_coeff cell2Term1_coeff_18_9 18 9
+cell2_terminal_coeff cell2Term1_coeff_19_0 19 0
+cell2_terminal_coeff cell2Term1_coeff_19_1 19 1
+cell2_terminal_coeff cell2Term1_coeff_19_2 19 2
+cell2_terminal_coeff cell2Term1_coeff_19_3 19 3
+cell2_terminal_coeff cell2Term1_coeff_19_4 19 4
+cell2_terminal_coeff cell2Term1_coeff_19_5 19 5
+cell2_terminal_coeff cell2Term1_coeff_19_6 19 6
+cell2_terminal_coeff cell2Term1_coeff_19_7 19 7
+cell2_terminal_coeff cell2Term1_coeff_19_8 19 8
+cell2_terminal_coeff cell2Term1_coeff_19_9 19 9
+cell2_terminal_coeff cell2Term1_coeff_20_0 20 0
+cell2_terminal_coeff cell2Term1_coeff_20_1 20 1
+cell2_terminal_coeff cell2Term1_coeff_20_2 20 2
+cell2_terminal_coeff cell2Term1_coeff_20_3 20 3
+cell2_terminal_coeff cell2Term1_coeff_20_4 20 4
+cell2_terminal_coeff cell2Term1_coeff_20_5 20 5
+cell2_terminal_coeff cell2Term1_coeff_20_6 20 6
+cell2_terminal_coeff cell2Term1_coeff_20_7 20 7
+cell2_terminal_coeff cell2Term1_coeff_20_8 20 8
+cell2_terminal_coeff cell2Term1_coeff_20_9 20 9
+cell2_terminal_coeff cell2Term1_coeff_21_0 21 0
+cell2_terminal_coeff cell2Term1_coeff_21_1 21 1
+cell2_terminal_coeff cell2Term1_coeff_21_2 21 2
+cell2_terminal_coeff cell2Term1_coeff_21_3 21 3
+cell2_terminal_coeff cell2Term1_coeff_21_4 21 4
+cell2_terminal_coeff cell2Term1_coeff_21_5 21 5
+cell2_terminal_coeff cell2Term1_coeff_21_6 21 6
+cell2_terminal_coeff cell2Term1_coeff_21_7 21 7
+cell2_terminal_coeff cell2Term1_coeff_21_8 21 8
+cell2_terminal_coeff cell2Term1_coeff_21_9 21 9
+cell2_terminal_coeff cell2Term1_coeff_22_0 22 0
+cell2_terminal_coeff cell2Term1_coeff_22_1 22 1
+cell2_terminal_coeff cell2Term1_coeff_22_2 22 2
+cell2_terminal_coeff cell2Term1_coeff_22_3 22 3
+cell2_terminal_coeff cell2Term1_coeff_22_4 22 4
+cell2_terminal_coeff cell2Term1_coeff_22_5 22 5
+cell2_terminal_coeff cell2Term1_coeff_22_6 22 6
+cell2_terminal_coeff cell2Term1_coeff_22_7 22 7
+cell2_terminal_coeff cell2Term1_coeff_22_8 22 8
+cell2_terminal_coeff cell2Term1_coeff_22_9 22 9
+cell2_terminal_coeff cell2Term1_coeff_23_0 23 0
+cell2_terminal_coeff cell2Term1_coeff_23_1 23 1
+cell2_terminal_coeff cell2Term1_coeff_23_2 23 2
+cell2_terminal_coeff cell2Term1_coeff_23_3 23 3
+cell2_terminal_coeff cell2Term1_coeff_23_4 23 4
+cell2_terminal_coeff cell2Term1_coeff_23_5 23 5
+cell2_terminal_coeff cell2Term1_coeff_23_6 23 6
+cell2_terminal_coeff cell2Term1_coeff_23_7 23 7
+cell2_terminal_coeff cell2Term1_coeff_23_8 23 8
+cell2_terminal_coeff cell2Term1_coeff_23_9 23 9
+cell2_terminal_coeff cell2Term1_coeff_24_0 24 0
+cell2_terminal_coeff cell2Term1_coeff_24_1 24 1
+cell2_terminal_coeff cell2Term1_coeff_24_2 24 2
+cell2_terminal_coeff cell2Term1_coeff_24_3 24 3
+cell2_terminal_coeff cell2Term1_coeff_24_4 24 4
+cell2_terminal_coeff cell2Term1_coeff_24_5 24 5
+cell2_terminal_coeff cell2Term1_coeff_24_6 24 6
+cell2_terminal_coeff cell2Term1_coeff_24_7 24 7
+cell2_terminal_coeff cell2Term1_coeff_24_8 24 8
+cell2_terminal_coeff cell2Term1_coeff_24_9 24 9
+cell2_terminal_coeff cell2Term1_coeff_25_0 25 0
+cell2_terminal_coeff cell2Term1_coeff_25_1 25 1
+cell2_terminal_coeff cell2Term1_coeff_25_2 25 2
+cell2_terminal_coeff cell2Term1_coeff_25_3 25 3
+cell2_terminal_coeff cell2Term1_coeff_25_4 25 4
+cell2_terminal_coeff cell2Term1_coeff_25_5 25 5
+cell2_terminal_coeff cell2Term1_coeff_25_6 25 6
+cell2_terminal_coeff cell2Term1_coeff_25_7 25 7
+cell2_terminal_coeff cell2Term1_coeff_25_8 25 8
+cell2_terminal_coeff cell2Term1_coeff_25_9 25 9
+cell2_terminal_coeff cell2Term1_coeff_26_0 26 0
+cell2_terminal_coeff cell2Term1_coeff_26_1 26 1
+cell2_terminal_coeff cell2Term1_coeff_26_2 26 2
+cell2_terminal_coeff cell2Term1_coeff_26_3 26 3
+cell2_terminal_coeff cell2Term1_coeff_26_4 26 4
+cell2_terminal_coeff cell2Term1_coeff_26_5 26 5
+cell2_terminal_coeff cell2Term1_coeff_26_6 26 6
+cell2_terminal_coeff cell2Term1_coeff_26_7 26 7
+cell2_terminal_coeff cell2Term1_coeff_26_8 26 8
+cell2_terminal_coeff cell2Term1_coeff_26_9 26 9
+end SectionSixFirstLowCentralLargeAboveCertificateCurvatureCell2
+end
+end PrimesRestrictedDigits

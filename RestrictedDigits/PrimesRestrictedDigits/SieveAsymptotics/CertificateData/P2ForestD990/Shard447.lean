@@ -1,0 +1,295 @@
+import PrimesRestrictedDigits.SieveAsymptotics.SectionSixP2LeafDataD988
+import PrimesRestrictedDigits.SieveAsymptotics.SectionSixP2ThreeRootCoverD974
+
+/-!
+# exact P2 forest shard 447
+-/
+
+set_option autoImplicit false
+set_option warningAsError true
+set_option maxRecDepth 1000000
+set_option maxHeartbeats 0
+
+namespace PrimesRestrictedDigits
+namespace SectionSixP2CertificateD990
+namespace Shard447
+
+/- Root 2, exact path ((2, 'left'), (4, 'right'), (3, 'left'), (3, 'left'), (1, 'left'), (5, 'left'), (4, 'right'), (5, 'left')), 28 retained leaves. -/
+def root : RationalTetrahedron where
+  vertex := ![
+    ![84997 / 1000000, 185007 / 4000000, 185007 / 4000000],
+    ![16249 / 250000, 75003 / 1000000, 225009 / 4000000],
+    ![84997 / 1000000, 26001 / 400000, 26601 / 640000],
+    ![84997 / 1000000, 26001 / 400000, 295011 / 8000000]
+  ]
+
+theorem root_eq_path :
+    root = ((((((((sectionSixP2RootD974 (2 : Fin 3)).leftChild (2 : Fin 6)).rightChild (4 : Fin 6)).leftChild (3 : Fin 6)).leftChild (3 : Fin 6)).leftChild (1 : Fin 6)).leftChild (5 : Fin 6)).rightChild (4 : Fin 6)).leftChild (5 : Fin 6) := by
+  exact congrArg RationalTetrahedron.mk (by
+    decide +kernel :
+    root.vertex = (((((((((sectionSixP2RootD974 (2 : Fin 3)).leftChild (2 : Fin 6)).rightChild (4 : Fin 6)).leftChild (3 : Fin 6)).leftChild (3 : Fin 6)).leftChild (1 : Fin 6)).leftChild (5 : Fin 6)).rightChild (4 : Fin 6)).leftChild (5 : Fin 6)).vertex)
+
+def tree : RationalTetraSubdivision SectionSixP2LeafPayloadD988 :=
+  (.split (2 : Fin 6)
+    (.split (5 : Fin 6)
+      (.split (4 : Fin 6)
+        (.split (0 : Fin 6)
+          (.split (3 : Fin 6)
+            (.retain
+              { baseline := 9
+                legacy := 15
+                middle := ![14, 14, 15, 15, 15, 15, 15, 15]
+                inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                upper := 363168550 / 1000000 }
+            )
+            (.retain
+              { baseline := 9
+                legacy := 15
+                middle := ![2, 14, 15, 15, 15, 15, 15, 15]
+                inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                upper := 395368673 / 1000000 }
+            )
+          )
+          (.split (2 : Fin 6)
+            (.retain
+              { baseline := 9
+                legacy := 15
+                middle := ![14, 14, 15, 15, 15, 15, 15, 15]
+                inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                upper := 350385765 / 1000000 }
+            )
+            (.retain
+              { baseline := 9
+                legacy := 15
+                middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+                inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                upper := 359630530 / 1000000 }
+            )
+          )
+        )
+        (.split (2 : Fin 6)
+          (.split (3 : Fin 6)
+            (.split (5 : Fin 6)
+              (.retain
+                { baseline := 9
+                  legacy := 15
+                  middle := ![14, 14, 15, 15, 15, 15, 15, 15]
+                  inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                  upper := 433193337 / 1000000 }
+              )
+              (.retain
+                { baseline := 9
+                  legacy := 15
+                  middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+                  inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                  upper := 398036303 / 1000000 }
+              )
+            )
+            (.split (0 : Fin 6)
+              (.retain
+                { baseline := 9
+                  legacy := 15
+                  middle := ![14, 14, 15, 15, 15, 15, 15, 15]
+                  inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                  upper := 524724207 / 1000000 }
+              )
+              (.retain
+                { baseline := 9
+                  legacy := 15
+                  middle := ![14, 14, 15, 15, 15, 15, 15, 15]
+                  inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                  upper := 464621606 / 1000000 }
+              )
+            )
+          )
+          (.split (3 : Fin 6)
+            (.retain
+              { baseline := 9
+                legacy := 15
+                middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+                inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                upper := 389042806 / 1000000 }
+            )
+            (.split (0 : Fin 6)
+              (.retain
+                { baseline := 9
+                  legacy := 15
+                  middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+                  inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                  upper := 500174665 / 1000000 }
+              )
+              (.retain
+                { baseline := 9
+                  legacy := 15
+                  middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+                  inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                  upper := 428447765 / 1000000 }
+              )
+            )
+          )
+        )
+      )
+      (.split (3 : Fin 6)
+        (.split (3 : Fin 6)
+          (.retain
+            { baseline := 9
+              legacy := 15
+              middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+              inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+              upper := 354464509 / 1000000 }
+          )
+          (.retain
+            { baseline := 9
+              legacy := 15
+              middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+              inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+              upper := 386766345 / 1000000 }
+          )
+        )
+        (.split (4 : Fin 6)
+          (.split (4 : Fin 6)
+            (.retain
+              { baseline := 9
+                legacy := 15
+                middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+                inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                upper := 385816025 / 1000000 }
+            )
+            (.retain
+              { baseline := 9
+                legacy := 15
+                middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+                inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                upper := 420680345 / 1000000 }
+            )
+          )
+          (.split (0 : Fin 6)
+            (.retain
+              { baseline := 9
+                legacy := 15
+                middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+                inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                upper := 516578260 / 1000000 }
+            )
+            (.retain
+              { baseline := 9
+                legacy := 15
+                middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+                inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                upper := 443563659 / 1000000 }
+            )
+          )
+        )
+      )
+    )
+    (.split (3 : Fin 6)
+      (.split (0 : Fin 6)
+        (.split (3 : Fin 6)
+          (.retain
+            { baseline := 9
+              legacy := 15
+              middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+              inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+              upper := 379182505 / 1000000 }
+          )
+          (.retain
+            { baseline := 9
+              legacy := 15
+              middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+              inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+              upper := 412608523 / 1000000 }
+          )
+        )
+        (.split (1 : Fin 6)
+          (.retain
+            { baseline := 9
+              legacy := 15
+              middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+              inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+              upper := 370959480 / 1000000 }
+          )
+          (.retain
+            { baseline := 9
+              legacy := 15
+              middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+              inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+              upper := 386620457 / 1000000 }
+          )
+        )
+      )
+      (.split (0 : Fin 6)
+        (.split (4 : Fin 6)
+          (.split (2 : Fin 6)
+            (.retain
+              { baseline := 9
+                legacy := 15
+                middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+                inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                upper := 433665740 / 1000000 }
+            )
+            (.retain
+              { baseline := 9
+                legacy := 15
+                middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+                inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                upper := 471925140 / 1000000 }
+            )
+          )
+          (.split (3 : Fin 6)
+            (.retain
+              { baseline := 9
+                legacy := 15
+                middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+                inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                upper := 503686590 / 1000000 }
+            )
+            (.retain
+              { baseline := 9
+                legacy := 15
+                middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+                inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                upper := 548612140 / 1000000 }
+            )
+          )
+        )
+        (.split (1 : Fin 6)
+          (.split (4 : Fin 6)
+            (.retain
+              { baseline := 9
+                legacy := 15
+                middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+                inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                upper := 420280490 / 1000000 }
+            )
+            (.retain
+              { baseline := 9
+                legacy := 15
+                middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+                inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+                upper := 457737906 / 1000000 }
+            )
+          )
+          (.retain
+            { baseline := 9
+              legacy := 15
+              middle := ![14, 15, 15, 15, 15, 15, 15, 15]
+              inverse := ![2, 2, 2, 2, 2, 2, 2, 2]
+              upper := 420880181 / 1000000 }
+          )
+        )
+      )
+    )
+  )
+
+theorem valid :
+    tree.coverValid sectionSixP2LeafValidD988 root = true := by
+  decide +kernel
+
+theorem replay :
+    tree.replayWeightRat root (fun _ p => p.upper) =
+      (994457185235030756643363 / 8192000000000000000000000000 : Rat) := by
+  decide +kernel
+
+end Shard447
+end SectionSixP2CertificateD990
+end PrimesRestrictedDigits
